@@ -1,4 +1,4 @@
-// SISTEMA DE JOGOS PARALÍMPICOS
+// SISTEMAPARALÍMPICOS
 // Dados iniciais com notícias paralímpicas
 
 const dadosIniciais = {
