@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MOVIMENTO-PARALÍMPICO</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🏆Movimento Paralimpico</h1>
+                <p>Movimento Paralímpico! A inclusão também é parte da nossa educação.</p>
+            </div>
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#noticias"> Notícias</a>
+                <a href="#esportes"> Esportes</a>
+                <a href="#inscricao"> Sua História</a>
+                <a href="admin.html" class="btn-admin">🔐 Área Admin</a>
+            </nav>
+        </div>
+    </header>
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>👋 Bem-vindos(as) ao Movimento Paralimpico!</h2>
+            <p>Este site é dedicado a promover a inclusão e o apoio aos atletas paralímpicos,
+            celebrando suas conquistas e histórias inspiradoras. Aqui, você encontrará informações
+            sobre atletas, eventos, modalidades esportivas e muito mais.Junte-se a nós para apoiar
+             esses campeões e para ajudar a aumentar a visibilidade e o reconhecimento do movimento paralímpico!</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" id="total-alunos">0</span>
+                    <span class="stat-label">Hístorias contadas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">22</span>
+                    <span class="stat-label">Modalidades</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="total-noticias">0</span>
+                    <span class="stat-label">Notícias</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Inscrição para Alunos -->
+    <section id="inscricao" class="inscricao-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>📝 Gostou? conte a sua historia</h2>
+                <p>Conte-nos a sua história no esporte!
+                Cada atleta tem um começo,uma primeira vitória, um desafio superado, um momento que acendeu a paixão por competir. Queremos conhecer o seu!
+                Compartilhe conosco o que o esporte representa na sua vida e inspire outros a entrarem nesse jogo também.
+                </p>
+            </div>
+            
+            <div class="inscricao-container">
+                <form id="form-inscricao-aluno" class="inscricao-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome-inscricao">👤 Nome Completo:</label>
+                            <input type="text" id="nome-inscricao" name="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="nascimento-inscricao">📱data de nascimento:</label>
+                        <input type="date" style="color: gray;"  id="nascimento-inscricao" name="nascimento">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email-inscricao">📱Email:</label>
+                        <input type="email" id="email" 
+                        name="email" 
+                        placeholder="Ex:Digiteseuemail@gmail.com">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="esporte-inscricao">🏅 Modalidade Paralímpica:</label>
+                            <select id="esporte-inscricao" name="esporte" required>
+                                <option value="">Selecione a modalidade</option>
+                                <option value="natacao">🏊‍♀️ Natação</option>
+                                <option value="atletismo">🏃 Atletismo</option>
+                                <option value="halterofilismo">🏋️‍♂️ Halterofilismo</option>
+                                <option value="bocha">🔵 Bocha</option>
+                                <option value="futebol-cegos">⚽ Futebol de 5 (para cegos)</option>
+                                <option value="futebol-7">⚽ Futebol de 7 (paralisados cerebrais)</option>
+                                <option value="goalball">🟡 Goalball</option>
+                                <option value="tenis-cadeira">🎾 Tênis em Cadeira de Rodas</option>
+                                <option value="tenis-mesa">🏓 Tênis de Mesa</option>
+                                <option value="voleibol-sentado">🏐 Voleibol Sentado</option>
+                                <option value="basquete-cadeira">🏀 Basquete em Cadeira de Rodas</option>
+                                <option value="rugbi-cadeira">🏉 Rúgbi em Cadeira de Rodas</option>
+                                <option value="esgrima-cadeira">🤺 Esgrima em Cadeira de Rodas</option>
+                                <option value="canoagem">🚣 Canoagem</option>
+                                <option value="remo">🚤 Remo</option>
+                                <option value="paratriatlo">🏊‍♂️🚴‍♂️🏃 Paratriatlo</option>
+                                <option value="tiro-esportivo">🎯 Tiro Esportivo</option>
+                                <option value="tiro-arco">🏹 Tiro com Arco</option>
+                                <option value="ciclismo">🚴 Ciclismo</option>
+                                <option value="parataekwondo">🥋 Parataekwondo</option>
+                                <option value="judo">🥋 Judô Paralímpico</option>
+                            </select>
+                        </div>
+                    </div>
+                                    
+
+                    <div class="form-group">
+                    <label for="historia">📝 Sua história no esporte:</label>
+                    <textarea id="historia" name="historia"  placeholder="Conte um pouco sobre sua trajetória, como começou, suas conquistas, desafios e o que o esporte representa para você..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">✅ Confirmar Inscrição</button>
+                </form>
+                                
+                    <div class="inscricao-info">
+                        <h3>ℹ️ Informações Importantes</h3>
+                        <ul>
+                        <li>❓Você sabe o que é o esporte paralímpico?</li>
+                        <li>💪 É a prática esportiva adaptada para pessoas com deficiência física, visual ou intelectual</li>
+                        <li>🌟 Vai além da competição: promove inclusão, superação e autonomia</li>
+                        <li>🧠 Estimula o desenvolvimento físico, emocional e social</li>
+                        <li>🤝 Fortalece a integração, o respeito e o espírito de equipe</li>
+                        <li>🎯 Modalidades incluem atletismo, natação, bocha, tênis de mesa, entre outras</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                    <!-- Notícias Section -->
+                   <section id="noticias" class="noticias">
+                   <div class="container">
+                        <h2>📰 Últimas Notícias</h2>
+                        <div class="filtros">
+                            <button class="filtro-btn active" data-esporte="todos">📋 Todas</button>
+                            <button class="filtro-btn" data-esporte="natacao">🏊‍♂️ Natação</button>
+                            <button class="filtro-btn" data-esporte="atletismo">🏃 Atletismo</button>
+                            <button class="filtro-btn" data-esporte="halterofilismo">🏋️‍♂️ Halterofilismo</button>
+                            <button class="filtro-btn" data-esporte="bocha">🔵 Bocha</button>
+                            <button class="filtro-btn" data-esporte="futebol-cegos">⚽ Futebol de 5 (Cegos)</button>
+                            <button class="filtro-btn" data-esporte="futebol-7">⚽ Futebol de 7 (PC)</button>
+                            <button class="filtro-btn" data-esporte="goalball">🟡 Goalball</button>
+                            <button class="filtro-btn" data-esporte="tenis-cadeira">🎾 Tênis em Cadeira de Rodas</button>
+                            <button class="filtro-btn" data-esporte="tenis-mesa">🏓 Tênis de Mesa</button>
+                            <button class="filtro-btn" data-esporte="voleibol-sentado">🏐 Voleibol Sentado</button>
+                            <button class="filtro-btn" data-esporte="basquete-cadeira">🏀 Basquete em Cadeira de Rodas</button>
+                            <button class="filtro-btn" data-esporte="rugbi-cadeira">🏉 Rúgbi em Cadeira de Rodas</button>
+                            <button class="filtro-btn" data-esporte="esgrima-cadeira">🤺 Esgrima em Cadeira de Rodas</button>
+                            <button class="filtro-btn" data-esporte="canoagem">🚣 Canoagem</button>
+                            <button class="filtro-btn" data-esporte="remo">🚤 Remo</button>
+                            <button class="filtro-btn" data-esporte="paratriatlo">🏊‍♂️🚴‍♂️🏃 Paratriatlo</button>
+                            <button class="filtro-btn" data-esporte="tiro-esportivo">🎯 Tiro Esportivo</button>
+                            <button class="filtro-btn" data-esporte="tiro-arco">🏹 Tiro com Arco</button>
+                            <button class="filtro-btn" data-esporte="ciclismo">🚴 Ciclismo</button>
+                            <button class="filtro-btn" data-esporte="parataekwondo">🥋 Parataekwondo</button>
+                            <button class="filtro-btn" data-esporte="judo">🥋 Judô Paralímpico</button>
+                        </div>
+
+                        <div id="lista-noticias" class="noticias-grid">
+       
+                <!-- Notícias carregadas via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modalidades Paralímpicas -->
+<section id="esportes" class="esportes">
+    <div class="container">
+        <h2>🏅 Modalidades Paralímpicas</h2>
+        <div class="esportes-grid">
+            <div class="esporte-card" data-esporte="natacao">
+                <div class="esporte-icone">🏊‍♂️</div>
+                <h3>Natação</h3>
+                <p>Modalidade que desenvolve força, coordenação e resistência. Adaptada para diferentes tipos de deficiência física ou visual.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-natacao">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="atletismo">
+                <div class="esporte-icone">🏃</div>
+                <h3>Atletismo</h3>
+                <p>Inclui corridas, saltos e lançamentos. Base dos esportes paralímpicos e símbolo de superação.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-atletismo">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="halterofilismo">
+                <div class="esporte-icone">🏋️‍♂️</div>
+                <h3>Halterofilismo</h3>
+                <p>Prova de força e técnica, onde os atletas competem no levantamento de peso em banco.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-halterofilismo">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="bocha">
+                <div class="esporte-icone">🔵</div>
+                <h3>Bocha</h3>
+                <p>Esporte de precisão e estratégia, praticado por atletas com paralisia cerebral e outras deficiências severas.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-bocha">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="futebol-cegos">
+                <div class="esporte-icone">⚽</div>
+                <h3>Futebol de 5 (para cegos)</h3>
+                <p>Versão adaptada do futebol, com bola sonora e orientação por voz. Requer audição e percepção apuradas.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-futebol-cegos">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="futebol-7">
+                <div class="esporte-icone">⚽</div>
+                <h3>Futebol de 7 (paralisados cerebrais)</h3>
+                <p>Modalidade dinâmica e adaptada para atletas com paralisia cerebral, com regras ajustadas para inclusão.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-futebol-7">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="goalball">
+                <div class="esporte-icone">🟡</div>
+                <h3>Goalball</h3>
+                <p>Esporte exclusivo para pessoas com deficiência visual. O objetivo é marcar gols usando uma bola com guizos sonoros.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-goalball">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="tenis-cadeira">
+                <div class="esporte-icone">🎾</div>
+                <h3>Tênis em Cadeira de Rodas</h3>
+                <p>Modalidade adaptada do tênis tradicional, com duas quicadas permitidas antes do golpe.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-tenis-cadeira">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="tenis-mesa">
+                <div class="esporte-icone">🏓</div>
+                <h3>Tênis de Mesa</h3>
+                <p>Jogo de reflexos e precisão, disputado em cadeira de rodas ou em pé, conforme a classe funcional do atleta.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-tenis-mesa">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="voleibol-sentado">
+                <div class="esporte-icone">🏐</div>
+                <h3>Voleibol Sentado</h3>
+                <p>Versão inclusiva do vôlei, disputada com os atletas sentados na quadra. Exige agilidade e trabalho em equipe.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-voleibol-sentado">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="basquete-cadeira">
+                <div class="esporte-icone">🏀</div>
+                <h3>Basquete em Cadeira de Rodas</h3>
+                <p>Um dos esportes paralímpicos mais populares, com velocidade, técnica e muita emoção.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-basquete-cadeira">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="rugbi-cadeira">
+                <div class="esporte-icone">🏉</div>
+                <h3>Rúgbi em Cadeira de Rodas</h3>
+                <p>Esporte de contato e estratégia, voltado para atletas com deficiências em membros superiores e inferiores.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-rugbi-cadeira">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="esgrima-cadeira">
+                <div class="esporte-icone">🤺</div>
+                <h3>Esgrima em Cadeira de Rodas</h3>
+                <p>Modalidade de precisão e reflexo rápido. Os atletas competem fixos em cadeiras, em duelos intensos.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-esgrima-cadeira">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="canoagem">
+                <div class="esporte-icone">🚣</div>
+                <h3>Canoagem</h3>
+                <p>Esporte de força e equilíbrio, praticado em caiaques adaptados para diferentes tipos de deficiência.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-canoagem">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="remo">
+                <div class="esporte-icone">🚤</div>
+                <h3>Remo</h3>
+                <p>Exige sincronia e resistência. Os barcos são adaptados para garantir igualdade de condições entre os atletas.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-remo">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="paratriatlo">
+                <div class="esporte-icone">🏊‍♂️🚴‍♂️🏃</div>
+                <h3>Paratriatlo</h3>
+                <p>Combina natação, ciclismo e corrida. Um verdadeiro teste de resistência e superação.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-paratriatlo">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="tiro-esportivo">
+                <div class="esporte-icone">🎯</div>
+                <h3>Tiro Esportivo</h3>
+                <p>Esporte de foco, precisão e controle emocional. Disputado com armas adaptadas e grande concentração.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-tiro-esportivo">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="tiro-arco">
+                <div class="esporte-icone">🏹</div>
+                <h3>Tiro com Arco</h3>
+                <p>Requer concentração e estabilidade. Atletas competem com arcos adaptados para diferentes limitações físicas.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-tiro-arco">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="ciclismo">
+                <div class="esporte-icone">🚴</div>
+                <h3>Ciclismo</h3>
+                <p>Disputado em estrada ou pista, com bicicletas, triciclos e handbikes adaptadas a cada tipo de deficiência.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-ciclismo">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="parataekwondo">
+                <div class="esporte-icone">🥋</div>
+                <h3>Parataekwondo</h3>
+                <p>Arte marcial adaptada que valoriza técnica, equilíbrio e controle. Presente desde Tóquio 2020.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-parataekwondo">0</span> inscritos
+                </div>
+            </div>
+            <div class="esporte-card" data-esporte="judo">
+                <div class="esporte-icone">🥋</div>
+                <h3>Judô Paralímpico</h3>
+                <p>Voltado para atletas com deficiência visual. Destaca-se pela técnica e pelo respeito entre os competidores.</p>
+                <div class="esporte-participantes">
+                    <span id="participantes-judo">0</span> inscritos
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- atletas-->
+    <section id="atletas-paralimpicos" class="esportes">
+    <div class="container">
+        <h2>🏅 Histórias que Inspiram</h2>
+        <p>Conheça atletas paralímpicos que transformaram desafios em conquistas e se tornaram exemplos de superação no esporte e na vida.</p>
+
+        <div class="esportes-grid">
+
+            <div class="esporte-card" data-atleta="daniel-dias">
+                <div class="esporte-icone">🏊‍♂️</div>
+                <img src="img/daniel.webp" alt="" style="width: 150px; height: 150px;">
+                <h3>Daniel Dias</h3>
+                <p>Maior medalhista paralímpico brasileiro, Daniel nasceu com má-formação congênita nos membros e encontrou na natação sua paixão. Com 27 medalhas, tornou-se um símbolo de superação, humildade e excelência.</p>
+                <div class="esporte-participantes">
+                    🥇 27 medalhas paralímpicas
+                </div>
+            </div>
+
+            <div class="esporte-card" data-atleta="tereza">
+                <div class="esporte-icone">🏃‍♀️</div>
+                <img src="img/terezinha.jpeg" alt="" style="width: 150px; height: 150px;">
+                <h3>Terezinha Guilhermina</h3>
+                <p>Cega desde a infância, Terezinha é uma das maiores velocistas do mundo. Corre com auxílio de um atleta-guia e já conquistou 7 medalhas paralímpicas. É conhecida como "a mulher mais rápida do mundo sem enxergar".</p>
+                <div class="esporte-participantes">
+                    🏅 7 medalhas paralímpicas
+                </div>
+            </div>
+
+            <div class="esporte-card" data-atleta="gabrielzinho">
+                <div class="esporte-icone">🏊</div>
+                <img src="img/gabriel.jpg" alt="" style="width: 150px; height: 150px;">
+                <h3>Gabriel Araújo ("Gabrielzinho")</h3>
+                <p>Nadador com artrogripose, Gabriel mostrou ao mundo que nenhuma limitação física pode impedir o talento. Ganhou ouro nas Paralimpíadas de Tóquio 2020 e se tornou referência para atletas jovens.</p>
+                <div class="esporte-participantes">
+                    🥇 Campeão paralímpico em Tóquio 2020
+                </div>
+            </div>
+
+            <div class="esporte-card" data-atleta="ricardinho">
+                <div class="esporte-icone">⚽</div>
+                <h3>Ricardo Alves (Ricardinho)</h3>
+                <p>Cego desde os 8 anos, Ricardinho é lenda do futebol de 5. É conhecido por sua habilidade, precisão e visão de jogo — mesmo sem enxergar. Capitão da seleção, ajudou o Brasil a conquistar vários títulos paralímpicos.</p>
+                <div class="esporte-participantes">
+                    🏆 Pentacampeão paralímpico
+                </div>
+            </div>
+
+            <div class="esporte-card" data-atleta="meg-emmerich">
+                <div class="esporte-icone">🏋️‍♀️</div>
+                <h3>Meg Emmerich</h3>
+                <p>Atleta de halterofilismo, Meg nasceu com má-formação nos braços. No esporte, encontrou sua força — literal e emocional. Representa o Brasil em campeonatos internacionais e levanta a bandeira da inclusão feminina.</p>
+                <div class="esporte-participantes">
+                    💪 Destaque no halterofilismo paralímpico
+                </div>
+            </div>
+
+            <div class="esporte-card" data-atleta="fernando-fernandes">
+                <div class="esporte-icone">🚣</div>
+                <h3>Fernando Fernandes</h3>
+                <p>Ex-modelo e atleta, ficou paraplégico após um acidente. Reinventou sua vida na canoagem paralímpica, onde se tornou campeão mundial. Hoje, também atua como apresentador e defensor da acessibilidade no esporte.</p>
+                <div class="esporte-participantes">
+                    🛶 Campeão mundial de paracanoagem
+                </div>
+            </div>
+
+            <div class="esporte-card" data-atleta="andre-brasil">
+                <div class="esporte-icone">🏊</div>
+                <h3>André Brasil</h3>
+                <p>Teve poliomielite na infância, mas encontrou na piscina um caminho de ouro. É um dos maiores nadadores paralímpicos do Brasil, com recordes mundiais e dezenas de medalhas ao longo da carreira.</p>
+                <div class="esporte-participantes">
+                    🌊 14 medalhas paralímpicas
+                </div>
+            </div>
+
+            <div class="esporte-card" data-atleta="alan-fonteles">
+                <div class="esporte-icone">🏃</div>
+                <h3>Alan Fonteles</h3>
+                <p>Após amputação das pernas ainda na infância, Alan tornou-se ícone do atletismo paralímpico. Ganhou notoriedade ao vencer o favorito Oscar Pistorius nos 200m em Londres 2012.</p>
+                <div class="esporte-participantes">
+                    🥇 Ouro nos Jogos de Londres 2012
+                </div>
+            </div>
+
+            <div class="esporte-card" data-atleta="clodoaldo-silva">
+                <div class="esporte-icone">🏅</div>
+                <h3>Clodoaldo Silva</h3>
+                <p>O “Tubarão das Piscinas” teve paralisia cerebral e encontrou na natação o caminho para dezenas de medalhas e reconhecimento internacional. Também foi o responsável por acender a pira paralímpica no Rio 2016.</p>
+                <div class="esporte-participantes">
+                    🔥 Ícone paralímpico e símbolo dos Jogos do Rio
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>🏫 Instituto Federal de Rondônia</h3>
+                    <p>Campus Porto Velho Calama</p>
+                    <p>Movimento paralímpico 2025</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>📞 Contato</h4>
+                    <p>📧 esportes@ifro.edu.br</p>
+                    <p>📱 (69) 3229-9999</p>
+                    <a href="https://www.instagram.com/ifropvhcalama" target="_blank" class="btn-instagram">
+                        📷 @ifropvhcalama
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
